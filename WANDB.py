@@ -11,7 +11,7 @@ import os
 # Initialize WANDb
 wandb.init(project='pre_study_test_1', entity='yeganeh1212')
 
-'''# Define a simple neural network
+# Define a simple neural network
 class SimpleNN(nn.Module):
     def __init__(self):
         super(SimpleNN, self).__init__()
@@ -50,7 +50,7 @@ for epoch in range(5):  # loop over the dataset multiple times
             # Log loss to WANDb
             wandb.log({'loss': running_loss / 100, })
             running_loss = 0.0
-'''
+
 
 artifact = wandb.Artifact('training-script', type='code')
 script_path = os.path.basename(__file__)  # Get the current script filename
